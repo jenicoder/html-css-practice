@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- /*웹페이지 제목 정하기*/ -->
+    <title>HTML & CSS Basics Summary</title>
+    <!-- CSS링크 걸기 -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- css링크 밑에 구글폰트 링크걸기 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- body 구조 만들기 -->
+    <header>
+      <!-- 헤더의 제목 넣기 -->
+      <h1>HTML & CSS Basics Summary</h1>
+      <!-- 헤더에 이미지 넣기 -->
+      <img src="html-css.png" alt="HTML and CSS logos" />
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- 페이지 하나당 h1은 한개씩만 쓰는게 좋음 -->
+      <h2>HTML Summary</h2>
+      <!-- 도입텍스트 적기 -->
+      <p>
+        HTML (HyperText Markup Language) is used to define our page content,
+        structure and meaning. You
+        <!--꾸미길 원하는 단어에만 span으로 묶어주기--><span class="highlight"
+          >don't</span
+        >
+        use it for styling purposes. Use CSS for that instead!
+      </p>
+      <!-- 리스트 쓰기 -->
+
+      <ul>
+        <!-- li요소에 class를 부여하고 스타일링해야됨 -->
+        <li class="extra-important">
+          HTML uses "elements" to describe (annotate) content
+        </li>
+        <li>
+          HTML elements typically have an opening tag, content and then a
+          closing tag
+        </li>
+        <li class="extra-important">
+          You can also have voide (empty) elements like images
+        </li>
+        <li class="extra-important">
+          You can also configure elements with attributes
+        </li>
+        <li>
+          There's a long list of available elements but you'll gain experience
+          over time, no worries.
+        </li>
+      </ul>
+      <!-- 텍스트 하나 더 쓰기 -->
+
+      <p>
+        Learn more about all available HTML elements on
+        <!-- <p>안에 <a>넣기 -->
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+          >the MDN HTML element reference</a
+        >.
+      </p>
+
+      <!-- CSS 설명 -->
+      <h2>CSS Summary</h2>
+      <p>CSS (Cascading Style Sheets) is used for styling your page content.</p>
+      <ul>
+        <li>Styles are assigned via property-value pairs</li>
+        <li>You can assign styles via the "style" attribute</li>
+        <li class="extra-important">
+          To avoid code duplication, you typically use global styles (e.g. via
+          the "style" element) instead
+        </li>
+        <li>
+          Alternatively, you can work with external stylesheet files which you
+          "link" to
+        </li>
+        <li class="extra-important">
+          When working with CSS, Concepts like "inheritance", "specificity" and
+          the "box model" should be understood.
+        </li>
+      </ul>
+      <p>
+        Learn more about all availables CSS properties and values on
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+          >the MDN CSS property reference</a
+        >.
+      </p>
+    </main>
+    <footer>
+      <!-- 앵커태그를 이용해 pdf 첨부하기 -->
+      <!-- target="_blank"는 새로운 탭으로 여는것 -->
+      <a href="html-css-basics-summary (1).pdf" target="_blank"
+        >Download PDF Summary</a
+      >
+      <p>(c) Academind GmbH</p>
+    </footer>
+  </body>
+</html>

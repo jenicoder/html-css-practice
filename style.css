@@ -1,0 +1,103 @@
+/* 모든 body에 적용할 배경 색, 폰트 바꾸기 */
+body {
+  font-family: "Roboto", "sans-serif";
+  background-color: rgb(244, 234, 255);
+}
+
+/* 헤더에잇는 글씨 색상, 크기 바꾸기 */
+h1 {
+  font-size: 52px;
+  color: rgb(88, 49, 196);
+}
+
+/* 헤더를 페이지 중앙에 놓기 */
+header {
+  text-align: center;
+
+  /* 헤더 안쪽에 공간넣기 */
+  padding: 32px;
+}
+
+/* 헤더에있는 img만 선택하기 */
+header img {
+  /* 헤더에 있는 이미지 크기 줄이기 */
+  width: 300px;
+}
+
+/* main 스타일링 */
+main {
+  background-color: rgb(122, 74, 218);
+  /* 박스안에 공간주기 */
+  padding: 32px;
+  /* 박스크기 */
+  width: 700px;
+  /* 요소를 중앙에 옮기기. main에서 text-align:center 을 했어도, 인라인이 아닌 요소를 가운데 정렬하려면 다시해야됨 */
+  /* 약간의 트릭을 써서 중앙에 옮긴다 */
+  margin: 32px auto; /*위아래  양옆*/
+  /* 박스 모서리를 둥글게하기 */
+  border-radius: 8px;
+  /* 글씨 색 변경 */
+  color: rgb(248, 241, 255);
+}
+
+/* 리스트 스타일링 */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 14px 0; /*위아래  양옆*/
+
+  /* 마진이 아니라 패딩인이유: 왼쪽에 노란색 테두리를 추가하여 중요항목이라는걸 강조표시할거다. */
+  padding-left: 10px;
+}
+
+/* 링크(앵커태그) 꾸미기 */
+a {
+  text-decoration: none;
+  color: rgb(36, 3, 102);
+  background-color: rgb(255, 237, 177);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+/* 마우스 커서를 갖다댔을때의 상태 */
+a:hover,
+a:active {
+  background-color: rgb(250, 201, 39);
+}
+
+footer {
+  text-align: center;
+
+  /* 스크롤 더 하게 밑에 여백추가 */
+  margin-bottom: 100px;
+}
+/* footer 에 있는 p만  */
+footer p {
+  color: rgb(131, 113, 149);
+  margin-top: 30px;
+}
+
+/* footer 에있는 링크 꾸미기 */
+footer a {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: rgb(250, 201, 39);
+  color: rgb(66, 51, 4);
+}
+
+footer a:hover,
+footer a:active {
+  background-color: rgb(255, 186, 58);
+}
+
+.extra-important {
+  color: rgb(255, 237, 177);
+  border-left: 5px solid;
+}
+
+.highlight {
+  font-weight: bold;
+}
